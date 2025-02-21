@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/3.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-navbar">
+        <div class="logo"><span class="logo1">h</span>apid</div>
+
+        <div class="toggle">
+          <ul>
+            <b>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </b>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home" id="home">
+      <div class="container">
+        <div class="image">
+          <img src="img/3.png" alt="" />
+        </div>
+        <div class="home-text">
+          <h1>Hi, I'm <span class="name">Hapid</span></h1>
+          <h2>
+            <span class="job" id="typing-effect"></span>
+          </h2>
+
+          <a href="http://" class="btn">Download CV</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="container-about">
+        <div class="cardAbout">
+          <!-- Card 1: Pengenalan Diri -->
+
+          <div class="pembungkus">
+            <div class="text">
+              <h1>About Me</h1>
+            </div>
+            <div class="card">
+              <ul>
+                <li><strong>Nama:</strong> Muhammad Hafidz Luthfi</li>
+                <li><strong>Sekolah:</strong> SMKN 2 Magelang - RPL</li>
+                <li><strong>Minat:</strong> Web Development, Cybersecurity</li>
+                <li>
+                  <strong>Motivasi:</strong> Saya tertarik dengan teknologi dan
+                  ingin mengembangkan keterampilan saya di bidang pengembangan
+                  web.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2: Skill & Kemampuan -->
+          <div class="pembungkus2">
+            <div class="text">
+              <h1>My Skills</h1>
+            </div>
+            <div class="card">
+              <ul>
+                <li><strong>Front-end:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Back-end:</strong> PHP, MySQL</li>
+                <li>
+                  <strong>Cybersecurity:</strong> Dasar-dasar keamanan web
+                </li>
+                <li><strong>Framework:</strong> Bootstrap, Laravel (junior)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3: Pengalaman & Proyek -->
+          <div class="pembungkus3">
+            <div class="text">
+              <h1>My Projects</h1>
+            </div>
+            <div class="card">
+              <ul>
+                <li><strong>Project 1:</strong> Website portfolio pribadi</li>
+                <li><strong>Project 2:</strong> Sistem login multi-user</li>
+                <li>
+                  <strong>Project 3:</strong> Sistem peminjaman mobil sederhana
+                </li>
+                <li>
+                  <strong>Pengalaman:</strong> Mengerjakan proyek sekolah dan
+                  freelance kecil
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+      <div class="container-portfolio">
+        <h2>My Portfolio</h2>
+        <p class="subtitle">Check out some of my work</p>
+        <div class="portfolio-content">
+          <div class="portfolio-item">
+            <div class="portfolio-card">
+              <h3>No Projects Yet</h3>
+              <p>
+                I'm currently working on some exciting projects! Stay tuned for
+                more updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="container-contact">
+        <h1>Contact Me</h1>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> hafidzmuhammad1134@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +62 881-7640-782</p>
+            <p><i class="fas fa-map-marker-alt"></i> Magelang, Indonesia</p>
+            <div class="social-icons">
+              <a href="#" class="icon ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icon fb"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="icon li"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="#">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-footer">
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" class="icon fb">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="icon ig">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="icon li">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="footer-text">
+          <p>Copyright &copy; 2023 by Hapid</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
