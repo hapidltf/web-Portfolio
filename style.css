@@ -190,8 +190,9 @@ body {
 
   /* Saat navbar di-scroll */
   .scrolled .toggle ul {
-    background: rgba(71, 147, 175, 0); /* Transparan saat scroll */
-    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .scrolled .toggle ul li a {
@@ -462,8 +463,8 @@ body {
   }
 
   .btn {
-    padding: 12px 30px;
-    font-size: 1.4em;
+    padding: 10px 20px;
+    font-size: 1em;
   }
 }
 
@@ -630,10 +631,10 @@ h2 {
 
 /* ===== RESPONSIVE DESIGN ===== */
 
-/* Tablet (Lebar Maksimal 1024px) */
+/* responsive utk tablet */
 @media (max-width: 1024px) {
   .cardAbout {
-    height: auto; /* Hapus 100vh agar tidak terlalu jauh */
+    height: auto;
     padding: 40px 20px;
   }
 
@@ -649,7 +650,7 @@ h2 {
   }
 }
 
-/* Ponsel (Lebar Maksimal 768px) */
+/* reposnsive utk hp */
 @media (max-width: 768px) {
   .about {
     padding: 30px 15px;
@@ -672,7 +673,7 @@ h2 {
   }
 }
 
-/* Ponsel Kecil (Lebar Maksimal 480px) */
+/* hp Kecil  */
 @media (max-width: 480px) {
   .about {
     padding: 20px 10px;
@@ -683,7 +684,7 @@ h2 {
   }
 
   .card {
-    width: 90%;
+    width: 100%;
     padding: 15px;
   }
 }
@@ -802,12 +803,15 @@ h2 {
 
 /* Ponsel Kecil (Lebar Maksimal 480px) */
 @media (max-width: 480px) {
+  .container-portfolio {
+    padding: 0px 1px;
+  }
   .portfolio {
     padding: 12rem 6rem;
   }
 
   .portfolio h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .portfolio .subtitle {
@@ -816,6 +820,7 @@ h2 {
 
   .portfolio-item {
     padding: 15px;
+    max-width: 100%;
   }
 }
 
@@ -953,7 +958,7 @@ h2 {
 @media (max-width: 768px) {
   .contact {
     padding: 30px 15px;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
   }
 
   h1 {
@@ -979,6 +984,7 @@ h2 {
 @media (max-width: 480px) {
   .contact {
     padding: 20px 10px;
+    padding-bottom: 5rem;
   }
 
   h1 {
