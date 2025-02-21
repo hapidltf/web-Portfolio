@@ -669,7 +669,7 @@ h2 {
 
   .card {
     width: 85%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -686,6 +686,7 @@ h2 {
   .card {
     width: 100%;
     padding: 15px;
+    text-align: left;
   }
 }
 
